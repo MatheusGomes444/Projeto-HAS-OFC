@@ -1,0 +1,330 @@
+#sla {
+  position: absolute;
+  top: 1600px;
+  left: 650px;
+  transform: scale(1.4);
+}
+
+* {
+  margin: 0;
+  /*Para zerar a margin e padding padrão */
+  padding: 0;
+  /*Para zerar a margin e padding padrão */
+  font-family: arial;
+  box-sizing: border-box;
+  /* Todos os elementos n passaram do tamanho do padrão da pagina */
+}
+
+#Calculadora {
+  /*Estrutura da calculadora*/
+  width: 400px;
+  padding: 0.5em;
+  background-color: #cacaca;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+#Operação {
+  /*Alinhamento dos 2 de baixo*/
+  text-align: right;
+}
+
+#Anterior {
+  /*Valor ja calculado*/
+  color: #302c30;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+  /*Para efetuar a quebra de linha e manter tudo dentro da calc*/
+  min-height: 1.6em;
+}
+
+#Atual {
+  /*Valor sendo digitado*/
+  min-height: 1.6em;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+  /*Para efetuar a quebra de linha e manter tudo dentro da calc*/
+}
+
+#Botão {
+  /*Grade dos botões*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*Fr serve para criar grid com pre-definição de tamanho*/
+  gap: 2.5px;
+  /*Serve para dar espaço entre os botões*/
+}
+
+#Botão button {
+  /*Botoes*/
+  border: 1px solid transparent;
+  border-radius: 10px;
+  height: 6em;
+  font-size: 15px;
+  background-color: #fdb868;
+  cursor: pointer;
+  /*Para o mouse aparecer quando passarmos por cima*/
+}
+
+#Botão button:hover {
+  /*Para dar uma cor quando passamos o mouse por cima*/
+  background-color: #cfc5cf;
+  border-color: #bb46bb;
+}
+
+#Botão .Numeros {
+  background-color: #8cb6f5;
+}
+
+#Botão #igual {
+  grid-column: span 2;
+  /*Para que o botao ocupe 2 casas no grid*/
+  background-color: #174282;
+}
+
+#Botão #igual:hover {
+  /*Para dar uma cor quando passamos o mouse por cima*/
+  background-color: #c063c0;
+}
+.frame .text-wrapper-18 {
+  position: absolute;
+  width: 260px;
+  top: 0;
+  left: 156px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 70px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .rectangle-9 {
+  position: absolute;
+  width: 810px;
+  height: 160px;
+  top: 55px;
+  left: 72px;
+  background-color: #d9d9d9;
+}
+
+.frame .text-wrapper-19 {
+  position: absolute;
+  width: 1275px;
+  top: 489px;
+  left: 142px;
+  font-family: "Quantico-Bold", Helvetica;
+  font-weight: 700;
+  color: #393d81;
+  font-size: 120px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .como-usar-digite-um {
+  position: absolute;
+  width: 1306px;
+  top: 704px;
+  left: 305px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .span {
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+}
+
+.frame .text-wrapper-20 {
+  font-size: 36px;
+}
+
+.frame .text-wrapper-21 {
+  font-size: 50px;
+}
+
+.frame .group {
+  top: 784px;
+  position: absolute;
+  width: 83px;
+  height: 82px;
+  left: 185px;
+}
+
+.frame .overlap-17 {
+  position: relative;
+  height: 82px;
+}
+
+.frame .ellipse {
+  width: 83px;
+  top: 0;
+  background-color: #164182;
+  border-radius: 41.5px/37.78px;
+  position: absolute;
+  height: 76px;
+  left: 0;
+}
+
+.frame .ellipse-2 {
+  width: 81px;
+  top: 6px;
+  background-color: #fca035;
+  border-radius: 40.26px/37.78px;
+  position: absolute;
+  height: 76px;
+  left: 0;
+}
+.frame .overlap-wrapper {
+  background-color: #fdb868;
+  overflow: hidden;
+  width: 1415px;
+  height: 2280px;
+}
+.frame .overlap-group-wrapper {
+  top: 1100px;
+  position: absolute;
+  width: 83px;
+  height: 82px;
+  left: 185px;
+}
+
+.frame .group-2 {
+  top: 1309px;
+  position: absolute;
+  width: 83px;
+  height: 82px;
+  left: 185px;
+}
+
+.frame .group-3 {
+  top: 919px;
+  position: absolute;
+  width: 83px;
+  height: 82px;
+  left: 185px;
+}
+
+.frame .element {
+  width: 88px;
+  top: 804px;
+  left: 197px;
+  font-size: 40px;
+  position: absolute;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-22 {
+  width: 69px;
+  top: 939px;
+  left: 215px;
+  font-size: 40px;
+  position: absolute;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-23 {
+  width: 51px;
+  top: 1118px;
+  left: 215px;
+  font-size: 40px;
+  position: absolute;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-24 {
+  width: 44px;
+  top: 1329px;
+  left: 213px;
+  font-size: 40px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-25 {
+  width: 285px;
+  top: 2552px;
+  left: 1029px;
+  font-size: 200px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .div-2 {
+  position: absolute;
+  width: 1736px;
+  height: 373px;
+  top: 0;
+  left: 0;
+}
+
+.frame .rectangle-11 {
+  position: absolute;
+  width: 1415px;
+  height: 150px;
+  background-color:#0f408a;
+}
+
+.frame .overlap-group-2 {
+  position: relative;
+  height: 287px;
+  top: 110px;
+}
+
+.frame .rectangle-12 {
+  position: absolute;
+  width: 1415px;
+  height: 17px;
+  top: 40px;
+  background-color:var(--laranja)
+}
+
+.frame .o-removebg-preview {
+  position: absolute;
+  width: 200px;
+  height: 235px;
+  top: -110px;
+  object-fit: cover;
+}
+:root {
+  --laranja: rgb(252, 136, 54);
+}
+ 
+body{
+  max-height: 0px;
+  min-width: 100%;
+  transform: scale(0.6);
+}

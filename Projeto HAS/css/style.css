@@ -1,0 +1,337 @@
+* {
+    background-color: rgba(240, 245, 253, 1);
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    /*Serve pra deixar definido as cores, que vão ser utilizadas no site*/
+
+    --white: #000000;
+
+    --dark2: #3a415a;
+    --dark3: rgb(62, 104, 167);
+    --dark4: #89a7b1;
+    --dark5: #cbdad5;
+    --dark6: rgb(227, 117, 231);
+    --cyan1: #70e3ea;
+}
+
+::-webkit-scrollbar {
+    /*Serve pra mudar a cor do scroll do site */
+
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: var(--dark2);
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--dark3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--dark4);
+}
+
+body {
+    background-color: var(--dark1);
+    background-size: 400%;
+    height: 100vh;
+
+
+}
+
+header {
+    /* Parte de cima do site, botões Experiências, Quem sou eu ?, Meus Projetos, Contato*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #0f408a;
+
+}
+
+.box-img-header {
+    /*Parte da logo*/
+
+    width: 0rem;
+
+}
+
+.img-logo {
+    background-color: #0f408a;
+    max-height: 100px;
+    max-width: 100px;
+
+}
+
+nav {
+    /*Parte dos link/botões Experiências, Quem sou eu ?, Meus Projetos, Contato*/
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:  #0f408a;
+
+}
+
+.nav-links {
+background-color:  #0f408a;
+    text-decoration: none;
+    color: var(--white);
+
+
+}
+
+.nav-links:hover {
+    /*Quando passar o mouse por cima acontece alguma coisa*/
+
+    color: var(--dark4);
+    transition: .4s;
+    text-decoration: underline;
+
+}
+
+button {
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+:is(button, .link-action) {
+    /* Parte do botão saber mais, "is" serve para a mesma estilização, que estiver fazendo em link-action seja feita em button  */
+
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+.btn-action {
+
+
+    background-color: rgb(18, 107, 240);
+    border: 1px solid var(--dark3);
+    color: var(--white);
+
+}
+
+.btn-action:hover {
+    /*Quando passar o mouse por cima acontece alguma coisa*/
+
+    background-color: var(--dark3);
+    border: 1px solid var(--dark3);
+
+
+}
+
+.link-action {
+
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+main {
+    /*Intrega todos os elementos centrais*/
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+section {
+    /*Mexe com todas as seções*/
+
+    padding: 4rem;
+
+}
+
+.first-section {
+    /*Primeira seção da pagina, apresentação e a logo*/
+    border: 1px solid color rgba(252, 107, 1, 1);
+    display: flex;
+
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.owl {
+    color: rgba(251, 108, 4, 1);
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section>div {
+
+    display: flex;
+
+    gap: 1rem;
+    min-width: 300px;
+
+}
+
+h1 {
+
+    color: var(--white);
+    letter-spacing: 4px;
+
+}
+
+strong {
+    color: var(--cyan1);
+}
+
+.first-section p {
+    color: var(--white);
+
+}
+
+.first-section button {
+
+    width: 200px;
+
+}
+
+.box-img-main {
+
+    max-width: 450px;
+    padding: 1rem;
+
+
+}
+
+.img-profile {
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.second-section {
+    /* Segunda seção da pagina, Experiências*/
+    background-color: rgba(23, 66, 130, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.second-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.second-section ul li:hover {
+    /*Quando passar o mouse por cima acontece alguma coisa*/
+    color: var(--dark5);
+    transition: .4s;
+    cursor: default;
+}
+
+
+h2 {
+    background-color:#0f408a;
+    color: rgba(251, 108, 4, 1);
+}
+
+.second-section div {
+
+
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.second-section p {
+    color: var(--dark4);
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.final {
+    color: #fb6c04;
+    direction: center;
+
+
+}
+
+
+
+
+.pedro {
+    height: 250px;
+    width: 270px;
+    border-radius: 50%;
+}
+.gi {
+    height: 250px;
+    border-radius: 50%;
+    width: 270px;
+    height: 250px;
+}
+.pudim{
+    border-radius: 50%;
+    width: 300px;
+    height: 250px;
+
+}
+.mat {
+    height: 250px;
+    border-radius: 50%;
+    width: 270px;
+    height: 250px;
+}
+
+li{
+    background-color: #0f408a;
+}
+ul{
+    background-color: #0f408a;
+}
+h1{
+    text-align: center;
+}
+h1.title{
+   color:#fb6c04;
+}
+h1.desing{
+    color: #0f408a;
+}
+div.box {
+	display:flex;
+    justify-content: center;
+}
+span{
+    font-size: 20px;
+    color:#fb6c04;
+    
+}
